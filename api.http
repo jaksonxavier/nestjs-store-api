@@ -1,0 +1,25 @@
+###
+POST http://localhost:8091/products
+Content-Type: application/json
+
+{
+    "name": "test 2",
+    "price": 9.99
+}
+
+###
+GET http://localhost:8091/products
+
+###
+GET http://localhost:8091/products/1
+
+###
+PATCH http://localhost:8091/products/3
+Content-Type: application/json
+
+{
+    "price": 8.99
+}
+
+###
+DELETE http://localhost:8091/products/1
