@@ -3,7 +3,7 @@ POST http://localhost:8091/products
 Content-Type: application/json
 
 {
-    "name": "test 2",
+    "name": "Product test 1",
     "price": 9.99
 }
 
@@ -23,3 +23,12 @@ Content-Type: application/json
 
 ###
 DELETE http://localhost:8091/products/1
+
+###
+POST http://localhost:8091/product-grpc-client
+Content-Type: application/json
+
+{
+    "name": "Product test 2",
+    "price": 19.79
+}
